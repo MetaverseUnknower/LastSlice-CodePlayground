@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<!-- This is a comment! This does not show up in the code, it's just a way to document what's going on for other devs. -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tab Title</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Imports the CSS file -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Imports the jQuery library. 
+        Note that jQuery is being replaced by frameworks like Vue and React these days, 
+        but it makes it easier to read what the code is doing to the HTML.-->
+    <script src="scripts.js"></script> <!-- Imports our own JavaScript file -->
+</head>
+
+<body>
+    <!-- The body is where all of the visual elements of your page will go. -->
+    <!-- A Header 1 element with default styles -->
+    <h1>Code Playground</h1>
+
+    <!-- A Header 2 element with a class -->
+    <h2 class="light-header">Custom H2 w/ .light-header class</h2>
+
+    <!-- A Header 2 element with an id-->
+    <h2 id="orangeHeader">Custom H2 w/ #orangeHeader id</h2>
+
+    <!-- A Header 2 element with an id and a class -->
+    <h2 id="redHeader" class="light-header">Custom H2 w/ #redHeader id and .light-header class</h2>
+    <p>
+        <a id="toggleLink" href="">Something to notice!</a>
+    </p>
+
+    <div id="hiddenCaptionContainer">
+        <p id="hiddenCaption" class="hidden caption">#redHeader being bold is considered to be more specific (and thus more important) than .light-header's normal
+            font weight.<br /> This message will self-destruct.</p>
+    </div>
+
+    <p>
+        <button id="toggleButton">Display Super Rare Secret NFT Collection</button>
+    </p>
+
+    <!-- div elements are often used to encase other elements. In this case, we hide everything inside this div by hiding the div itself.-->
+    <div id="nftCardContainer" class="hidden">
+        <div class="nft-card">
+            <!-- An image stored locally within this project folder -->
+            <img src="assets/ultra-rate-authentic-nft.png" class="centered-image">
+
+            <!-- A caption for the above image, styled with the reusable .caption class -->
+            <p class="caption">Ultra rare authentic NFT!<br />
+                No Right Clicking or Saving As!!!</p>
+        </div>
+
+        <div class="nft-card">
+            <!-- An image stored on the interwebs -->
+            <img src="https://lastslice.org/wp-content/uploads/2021/08/footer-avatar.png" class="centered-image" />
+
+            <!-- A caption for the above image, styled with the reusable .caption class -->
+            <p class="caption">Ultra rare authentic NFT Wearable! <br />
+                Right click and Save As to try it on!</p>
+        </div>
+    </div>
+</body>
+
+</html>

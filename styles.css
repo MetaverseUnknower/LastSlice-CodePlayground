@@ -1,0 +1,67 @@
+/* This is a CSS comment. */
+
+/* The styles in this file will overrides the browser defaults. What they do is pretty human-readable. Try messing with colors, fonts, padding, margin, etc. 
+Deleting a css property shou */
+
+/* This changes the default font to Helvetica, makes the entire page's background yellow, and makes the text red. */
+body {
+    font-family: Helvetica;
+    background: yellow;
+    color: red;
+}
+
+/* Centers the text of H1 and H2 elements. 
+Commas are used to set the same style to multiple things. This works for elements, classes, ids, anything. */
+h1, h2 {
+    text-align: center;
+    color: darkred
+}
+
+p {
+    text-align: center;
+}
+
+.light-header {
+    color: black;
+    font-weight: normal; /* Since the browser's default styles make headers bold, we can do this to make them normal weight again. */
+}
+
+#orangeHeader { /* Since ids are considered more specific than base elements (h1,h2) or classes (.light-header), this styles override the header colors we've changed above. */
+    color: orange;
+}
+
+#redHeader { /* Since ids are considered more specific than base elements (h1,h2) or classes (.light-header), this styles override the header colors AND weight we've changed above. */
+    color: red;
+    font-weight: bold; 
+}
+
+/* Gives 8 pixels of space between the button text and the button border on all sides */
+#toggleButton {
+    padding: 8px;
+}
+
+#hiddenCaptionContainer {
+    height: 75px;
+}
+
+/* Gives us a class to apply to any element we want to hide with the JavaScript */
+.hidden {
+    display: none;
+}
+
+div.nft-card {
+    background: lightyellow;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+    margin: 10px auto;
+    /* ^ This adds 10px of margin to the top and bottom of the card, and 'auto' centers the card by adding the exact amount of space needed on the left and right.*/
+    text-align: center;
+}
+
+/* Styles the text in any element that has the .caption class. Note that italic and bold are set with different properties, which is kind of counterintuitive. */
+.caption {
+    font-style: italic;
+    font-weight: bold;
+}
